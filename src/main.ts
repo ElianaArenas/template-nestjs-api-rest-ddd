@@ -3,9 +3,11 @@ import { AppModule } from './app.module';
 import winstonLogger from './config/logger/logger-options';
 import { API_DEFAULT_PORT, API_DEFAULT_PREFIX } from './common/constants';
 import { ValidationPipe } from '@nestjs/common';
-import { TransformInterceptor } from './infraestructure/rest/interceptors/response.interceptor';
-import { HttpExceptionFilter } from './infraestructure/rest/exceptions/httpException.filter';
+
 import { createSwagger } from './config/swagger/swagger-config';
+import { TransformInterceptor } from './application/interceptors/response.interceptor';
+import { HttpExceptionFilter } from './application/exceptions/httpException.filter';
+
 
 async function bootstrap() {
     const app = await NestFactory.create(AppModule, {
