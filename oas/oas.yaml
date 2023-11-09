@@ -1,0 +1,51 @@
+openapi: 3.0.0
+paths:
+  /api/health/liveness:
+    get:
+      operationId: HealthController_liveness
+      summary: Check app liveness
+      parameters: []
+      responses:
+        "200":
+          description: Working correctly
+        "401":
+          description: Unauthorized
+      tags: &a1
+        - Health
+  /api/health/readiness:
+    get:
+      operationId: HealthController_readiness
+      summary: Check app readiness
+      parameters: []
+      responses:
+        "200":
+          description: Working correctly
+        "401":
+          description: Unauthorized
+      tags: *a1
+info:
+  title: API
+  description: API Description
+  version: 0.0.1
+  contact: {}
+  license:
+    name: Blue Express
+    url: https://www.blue.cl
+tags: []
+servers:
+  - url: http://localhost:3000
+    description: Local Environment
+  - url: https://devapigw.bluex.cl
+    description: Development Environment
+  - url: https://qaapigw.bluex.cl
+    description: QA - Environment
+  - url: https://apigw.bluex.cl
+    description: Production Environment
+components:
+  securitySchemes:
+    basic:
+      type: http
+      scheme: basic
+  schemas: {}
+security:
+  - basic: []
