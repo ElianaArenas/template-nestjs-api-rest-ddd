@@ -4,7 +4,7 @@ This template contains a DDD folder structure for NestJS projects that you can q
 
 > # 🔖 How to use this template
 > - Replace the content files that contains TODO comments with your own API's details logic.
-> - Read this documentation:
+> - Read this documentation: https://www.notion.so/Qu-es-Domain-Drive-Design-DDD-dd7fe3c72cdb436380189ce28a9bbd2d
 >
 >
 > If you want to see a practical example, follow the user demo api:
