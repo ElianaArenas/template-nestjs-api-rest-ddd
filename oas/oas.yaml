@@ -23,6 +23,32 @@ paths:
         "401":
           description: Unauthorized
       tags: *a1
+  /api/user:
+    get:
+      operationId: UserController_findAll
+      summary: get all users
+      parameters: []
+      responses:
+        "200":
+          description: ""
+        "401": &a2
+          description: Unauthorized
+    post:
+      operationId: UserController_create
+      summary: Create a user
+      parameters: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UserDTO"
+      responses:
+        "200":
+          description: Successful request
+        "201":
+          description: ""
+        "401": *a2
 info:
   title: API
   description: API Description
@@ -46,6 +72,19 @@ components:
     basic:
       type: http
       scheme: basic
-  schemas: {}
+  schemas:
+    UserDTO:
+      type: object
+      properties:
+        name:
+          type: string
+        surname:
+          type: string
+        email:
+          type: string
+      required:
+        - name
+        - surname
+        - email
 security:
   - basic: []

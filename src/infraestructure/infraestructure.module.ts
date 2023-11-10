@@ -3,6 +3,7 @@ import { DatabasesModule } from './databases/databases.module';
 
 
 @Module({
-  imports: [DatabasesModule]
+  imports: [DatabasesModule],
+  exports: [DatabasesModule],
 })
 export class InfraestructureModule {}

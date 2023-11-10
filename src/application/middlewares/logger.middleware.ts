@@ -1,37 +1,19 @@
-import { Injectable, NestMiddleware } from '@nestjs/common';
+import { Injectable, Logger, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
-import { createLogger, format, transports, Logger, addColors } from 'winston';
 
-const colors = {
-  info: 'green',
-  warn: 'yellow',
-  error: 'red',
-};
 
-addColors(colors);
 @Injectable()
 class LoggerMiddleware implements NestMiddleware {
   private readonly logger = new Logger();
 
-  constructor() {
-    this.logger = createLogger({
-      level: 'info',
-      format: format.combine(
-        format.timestamp({ format: 'YYYY-MM-dd HH:mm:ss' }),
-        format.json(),
-      ),
-      transports: [
-        new transports.Console({
-          format: format.combine(format.json()),
-        }),
-      ],
-    });
-  }
+  constructor() {}
 
   use(request: Request, response: Response, next: NextFunction): void {
     response.on('finish', () => {
       const { method, originalUrl, ip } = request;
       const { statusCode, statusMessage } = response;
+
+      // TODO: change de route for health check
       const isHealthCheck = originalUrl == '/api/integration/CHECK_ROUTE/health/liveness';
       const isSuccessPost = originalUrl == '/api/integration/CHECK_ROUTE/initiate' && statusCode == 201 && method == 'POST';
 
@@ -45,7 +27,7 @@ class LoggerMiddleware implements NestMiddleware {
 
       if (isSuccessPost) return;
 
-      return this.logger.info(message);
+      return this.logger.log(message);
       
     });
 
