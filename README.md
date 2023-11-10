@@ -71,7 +71,10 @@ Documentation: here comes the url
 ```bash
     {url}/api/docs   # example: http://localhost:3000/api/docs#/
 ```
-
+- ### Postman
+```bash
+  https://documenter.getpostman.com/view/8357014/2s9YXk2fVn
+```
 
 ## 🚀
 ## Deployment
