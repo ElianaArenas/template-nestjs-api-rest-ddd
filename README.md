@@ -1,73 +1,100 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+## 📄 Get started here
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+This template contains a DDD folder structure for NestJS projects that you can quickly customize and reuse.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+> # 🔖 How to use this template
+> - Replace the content files that contains TODO comments with your own API's details logic.
+> - Read this documentation:
+>
+>
+> If you want to see a practical example, follow the user demo api:
+>
+> https://github.com/ElianaArenas/template-nestjs-api-rest-ddd/tree/example
+>
+>  <span style="color: red;">remove this section</span>
 
-## Description
+# REPOSITORY NAME
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[repository description ...]
 
-## Installation
+## 📋 Content:
 
-```bash
-$ yarn install
+- [Objective](#objective)
+- [Requirements](#requirements)
+- [Build with](#build-with)
+- [Instalation](#instalation)
+- [Deployment](#deployment)
+- [API documentation](#api-documentation)
+
+## Objective: 
+
+[repository objective ...]
+
+## Requirements
+
+- [Node.js](https://nodejs.org/en/blog/release/v18.13.0) - versión 18.13
+
+## 🔨
+## Build with
+
+- [nestjs](https://docs.nestjs.com/) 
+- [mongoose](https://mongoosejs.com/)
+- [mongo]()
+- [oracle]()
+- [yarn](https://yarnpkg.com/) is the default package management system.
+
+## Instalation
+
+Step 1: Clone the repository:
+```
+$ git clone https://github.com/ElianaArenas/template-nestjs-api-rest-ddd.git
+```
+If yarn is used, it must be installed globally with the following command:
+```
+$ npm install --global yarn
+```
+Step 2: cd into the cloned repository and run:
+ 
+```
+$ npm install   ||  $ yarn
 ```
 
-## Running the app
+Step 3: Put the credentials, this variables can be defined in command line or in the .env file. Copy and rename .env.template to .env and fill all necesary params
+
+
+Step 4: Initialize the project:
 
 ```bash
-# development
-$ yarn run start
+# Development mode
+$ npm run start   #or
+$ yarn start
 
-# watch mode
-$ yarn run start:dev
+#  Watch mode
+$ npm run start:dev  #or
+$ yarn start:dev
 
-# production mode
-$ yarn run start:prod
+#  Production mode
+$ npm run start:prod    #or
+$ yarn start:prod
+
 ```
+📝
+## API documentation
 
-## Test
+Documentation: here comes the url
+
+- #### Swagger:
 
 ```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
+{url}/api/docs   # example: http://localhost:3000/api/docs#/
+```
+- #### Postman
+```bash
+[add your postman documentation url ...]
 ```
 
-## Support
+## 🚀
+## Deployment
+[Deployment details ....]
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+Made 💻 with ❤🧠 
