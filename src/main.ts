@@ -5,8 +5,9 @@ import { API_DEFAULT_PORT, API_DEFAULT_PREFIX } from './common/constants';
 import { ValidationPipe } from '@nestjs/common';
 
 import { createSwagger } from './config/swagger/swagger-config';
-import { TransformInterceptor } from './application/interceptors/response.interceptor';
-import { HttpExceptionFilter } from './application/exceptions/httpException.filter';
+import { TransformInterceptor } from './infraestructure/rest/interceptors/response.interceptor';
+import { HttpExceptionFilter } from './infraestructure/rest/exceptions/httpException.filter';
+
 
 
 async function bootstrap() {

@@ -1,5 +1,4 @@
 import { Module, Provider } from '@nestjs/common';
-import { HealthController } from './controllers/health/health.controller';
 import { AppService } from './services/app.service';
 
 // TODO: Change it for your service providers
@@ -10,7 +9,7 @@ const providers: Provider[] = [
     },
 ];
 @Module({
-    controllers: [HealthController],
-    providers
+    providers,
+    exports: providers,
 })
 export class ApplicationModule {}
