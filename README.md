@@ -11,6 +11,9 @@ This template contains a DDD folder structure for NestJS projects that you can q
 >
 > https://github.com/ElianaArenas/template-nestjs-api-rest-ddd/tree/example
 >
+> # How to do Logging and exceptions 🔊
+>
+> [Logs/Exceptions]()
 >  <span style="color: red;">remove this section</span>
 
 # REPOSITORY NAME
@@ -20,6 +23,7 @@ This template contains a DDD folder structure for NestJS projects that you can q
 ## 📋 Content:
 
 - [Objective](#objective)
+- [Documentation](#)
 - [Requirements](#requirements)
 - [Build with](#build-with)
 - [Instalation](#instalation)
@@ -29,6 +33,9 @@ This template contains a DDD folder structure for NestJS projects that you can q
 ## Objective: 
 
 [repository objective ...]
+
+## Documentation
+[confluence documentation...]
 
 ## Requirements
 
