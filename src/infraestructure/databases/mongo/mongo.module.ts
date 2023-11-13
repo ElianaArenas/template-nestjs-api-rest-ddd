@@ -6,11 +6,13 @@ import { UserRepositoryMongo } from './repositories/user.repository';
 import { UserEntity, UserSchema } from './schemas/user.schema';
 
 
+
 const providers: Provider[] = [
     {
       provide: 'IUserRepository',
       useClass: UserRepositoryMongo,
     },
+    UserRepositoryMongo
   ];
 @Module({
   imports: [

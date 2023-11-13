@@ -1,14 +1,13 @@
-import { Module } from '@nestjs/common';
-import { HealthController } from './controllers/health/health.controller';
-import { UserController } from './controllers/user/user.controller';
+import { Module, forwardRef } from '@nestjs/common';
 import { UserService } from './services/user.service';
 import { InfraestructureModule } from 'src/infraestructure/infraestructure.module';
 
+const providers = [{ provide: 'IUserService', useClass: UserService }];
 
 @Module({
-    controllers: [HealthController, UserController],
-    providers: [{ provide: 'IUserService', useClass: UserService }],
-    imports: [InfraestructureModule]
+    providers,
+    exports: providers,
+    imports: [forwardRef(() =>InfraestructureModule)]
 })
 
 export class ApplicationModule {}

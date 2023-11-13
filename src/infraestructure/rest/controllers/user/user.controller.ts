@@ -1,7 +1,8 @@
 import { Body, Controller, Get, Inject, Post } from '@nestjs/common';
 import { ApiOkResponse, ApiOperation, ApiUnauthorizedResponse } from '@nestjs/swagger';
-import { UserDTO } from 'src/application/dtos';
+
 import { IUserService } from 'src/application/services/iUserService';
+import { UserDTO } from '../../dtos';
 
 @Controller('user')
 @ApiOkResponse({
@@ -11,7 +12,7 @@ import { IUserService } from 'src/application/services/iUserService';
 export class UserController {
     constructor(
         @Inject('IUserService')
-        private readonly userService: IUserService
+        private readonly userService: IUserService 
     ){}
 
     

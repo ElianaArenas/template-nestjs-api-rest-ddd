@@ -1,8 +1,9 @@
-import { Inject } from "@nestjs/common";
+import { Inject, Injectable } from "@nestjs/common";
 import { IUserService } from "./iUserService";
 import { IUserRepository } from "src/domain/interfaces/repositories/user.repository";
 import { User } from "src/domain/entities/user";
 
+@Injectable()
 export class UserService implements IUserService{
    constructor(
     @Inject('IUserRepository')
