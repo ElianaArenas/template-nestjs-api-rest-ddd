@@ -11,9 +11,6 @@ This template contains a DDD folder structure for NestJS projects that you can q
 >
 > https://github.com/ElianaArenas/template-nestjs-api-rest-ddd/tree/example
 >
-> # How to do Logging and exceptions 🔊
->
-> [Logs/Exceptions]()
 >  <span style="color: red;">remove this section</span>
 
 # REPOSITORY NAME
@@ -29,6 +26,10 @@ This template contains a DDD folder structure for NestJS projects that you can q
 - [Instalation](#instalation)
 - [Deployment](#deployment)
 - [API documentation](#api-documentation)
+
+> ## How to do Logging and exceptions 🔊
+>
+> [Logs/Exceptions]()
 
 ## Objective: 
 
